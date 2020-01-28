@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Seedling",
+    "description": "Our small package, suited for small business with light requirements.",
+    "image": "images/packages/seedling.png"
+  },
+  {
+    "title": "Tree",
+    "description": "A great all round package that suits most businesses, big and small",
+    "image": "images/packages/tree.png"
+  },
+  {
+    "title": "Forest",
+    "description": "Our largest package, designed for large and complex businesses",
+    "image": "images/packages/forest.png"
+  }
+]

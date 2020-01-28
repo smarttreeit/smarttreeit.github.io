@@ -1,0 +1,46 @@
+---
+title: SmartTree
+layout: default
+bodyClass: page-home
+---
+
+<div class="intro pb-4">
+  <div class="container">
+    <img  alt="SmartTree IT Solutions" class="logohome" src="{{site.baseurl}}/assets/images/fulllogo.png" />
+  </div>
+</div>
+
+<div class="container pt-2">
+  <div class="call">
+    <div class="call-box-top">
+      <div class="call-email"><strong>Email: </strong>
+        <a href="mailto:{{ site.data.contact.email }}">
+          {{ site.data.contact.email }}
+        </a>
+      </div>
+    </div>
+    <div class="call-box-bottom">
+      <a href="{{site.baseurl}}/contact" class="button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5 pb-5 pt-md-7 pb-md-7">
+  <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="title-3 text-dark mb-4">Our Packages</h2>
+        <p>
+          We've taken the complexity out of IT. Our simple packages are straight forward to understand and meet the requirements of your business. Wether your a small business with minimal requirements (seed), through to a larger organisation with complex requirements (forest) our packages have got you covered.
+          </p>
+      </div>
+    {% for feature in site.data.features %}
+    <div class="col-12 col-md-6 col-lg-4 mb-2">
+      <div class="feature">
+        {% if feature.image %}<div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image }}" /></div> {% endif %}
+        <h2 class="feature-title">{{ feature.title }}</h2>
+        <div class="feature-content">{{ feature.description }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
